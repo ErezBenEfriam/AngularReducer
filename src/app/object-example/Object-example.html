@@ -1,0 +1,11 @@
+<h1>Person Example</h1>
+
+
+<h3>Name: <span>{{ (Person$ | async).Name }}</span></h3>
+<h3>Age: <span>{{ (Person$ | async).Age }}</span></h3>
+
+<button (click)="FirstCase()">First case Person</button>
+<button (click)="SecondCase()">Second case Person</button>
+<button (click)="CustomePerson(age.value,name.value)">Custome Person </button>
+<input #name type="text" value="name" placeholder="Name">
+<input #age type="number" value=100 placeholder="Age">

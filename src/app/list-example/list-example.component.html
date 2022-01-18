@@ -1,0 +1,8 @@
+<h1>List Example</h1>
+<div *ngFor="let Person of  PersonList$ |async">
+<p>{{Person.Name}}-{{Person.Age}} </p>
+</div>
+<button (click)="firstcase()">add perosn</button>
+<button (click)="CustomePerson(age.value,name.value)">Custome Person </button>
+<input #name type="text" value="name" placeholder="Name">
+<input #age type="number" value=100 placeholder="Age">
